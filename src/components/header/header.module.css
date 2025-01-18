@@ -1,0 +1,45 @@
+header{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > img{
+    max-width: 250px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    gap: 3vw;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.links a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.links a:hover{
+    opacity: 0.5;
+}
+
+.selected{
+    color: var(--blue);
+}
+
+@media (max-width:875px) {
+    nav{
+        flex-direction: column;
+    }
+}
