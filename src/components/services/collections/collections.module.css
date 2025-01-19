@@ -1,0 +1,22 @@
+table{
+    margin-left: auto;
+}
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th, td{
+    padding: 1rem min(2rem, 2vw);
+}
+
+th{
+    font-size: 1.2rem;
+}
+
+td{
+    font-size: 1.1rem;
+}

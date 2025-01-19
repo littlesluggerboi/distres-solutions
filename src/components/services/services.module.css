@@ -1,0 +1,39 @@
+.services{
+    display: flex;
+    max-width: 1500px;
+    margin: 2rem auto 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    padding: 2rem;
+    border: 1px solid gray;
+    gap: 2rem;
+}
+
+@media (max-width:800px) {
+    .navigation{
+        display: none;
+    }
+}
+
+.navigation a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: manrope;
+    text-decoration: underline;
+}
+
+.navigation a:hover{
+    opacity: 0.5;
+}
+
+.selected {
+    color: var(--green);
+}
+
