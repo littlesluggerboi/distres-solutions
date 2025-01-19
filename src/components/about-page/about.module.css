@@ -1,0 +1,23 @@
+.container{
+    margin: 1rem 0 3rem 0;
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    margin: auto;
+    padding:1rem 3rem;
+    gap: 1rem;
+
+}
+
+@media (max-width:750px) {
+    .about{
+        grid-template-columns: 1fr;
+    }
+}
+
+.about:nth-child(2n){
+    background-color: var(--blue);
+    color: white;
+}
