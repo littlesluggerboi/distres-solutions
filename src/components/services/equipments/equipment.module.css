@@ -1,0 +1,32 @@
+.equipment{
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width:850px) {
+    .equipment{
+        flex-wrap: wrap;
+    }
+}
+
+.left{
+    display: grid;
+}
+
+.right{
+    max-width: 320px;
+}
+
+.right img{
+    width: 100%;
+}
+
+.detail{
+    margin-left: 2rem;
+}
+
+.detail p img{
+    float: left;
+    margin-right: 2rem;
+    max-width: min(320px, 100%);
+}
