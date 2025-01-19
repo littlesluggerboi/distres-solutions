@@ -1,0 +1,25 @@
+.home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: fit-content;
+}
+
+.home > img{
+    width: 100%;
+}
+
+.banner{
+    position: absolute;
+    top: 2rem;
+    background-color: var(--blue);
+    width: 100%;
+}
+
+.banner > h2{
+    color: white;
+    padding: 2rem 1rem;
+    max-width: 1500px;
+    margin: auto;
+    font-size: min(3vw,2rem);
+}
