@@ -1,0 +1,15 @@
+.avail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width:550px) {
+    .avail{
+        grid-template-columns: 1fr;
+    }
+}
+
+.avail img{
+    width: 100%;
+}
