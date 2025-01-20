@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
             <Link
               to={"contact"}
-              className={pathname === "contact" ? styles.selected : ""}
+              className={path === "contact" ? styles.selected : ""}
             >
               Contact Us
             </Link>

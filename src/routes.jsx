@@ -52,6 +52,7 @@ const router = createBrowserRouter([
         element:<Contact/>
       }
     ],
+    errorElement:<><h1>Error...</h1></>
   },
 ]);
 
