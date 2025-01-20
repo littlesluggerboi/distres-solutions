@@ -1,45 +1,38 @@
-import { useState } from "react";
 import styles from "./services.module.css";
-import { Link } from "react-router-dom";
-// import Equipment from "./equipments/equipment";
-// import Collections from "./collections/collections";
-import Avail from "./avail/avail";
-
+import { Link, Outlet, useLocation } from "react-router-dom";
 const Services = () => {
-  const [selected, setSelected] = useState(0);
-
+  const { pathname } = useLocation();
+  let path = pathname.replace("/services", "");
+  path = path.replaceAll("/", "");
   return (
     <>
       <div className={styles.services}>
         <div className={styles.navigation}>
           <Link
-            className={selected === 0 ? styles.selected : ""}
-            onClick={() => {
-              setSelected(0);
-            }}
+            to={"equipment"}
+            className={
+              path === "equipment" || path === "" ? styles.selected : ""
+            }
           >
             equipments and facilities
           </Link>
           <Link
-            className={selected === 1 ? styles.selected : ""}
-            onClick={() => {
-              setSelected(1);
-            }}
+            to={"collections"}
+            className={path === "collections" ? styles.selected : ""}
           >
             collection items w/ prices
           </Link>
           <Link
-            className={selected === 2 ? styles.selected : ""}
-            onClick={() => {
-              setSelected(2);
-            }}
+            to={"avail"}
+            className={path === "avail" ? styles.selected : ""}
           >
             how to avail services
           </Link>
         </div>
+        <Outlet></Outlet>
         {/* <Collections/> */}
         {/* <Equipment /> */}
-        <Avail/>
+        {/* <Avail/> */}
       </div>
     </>
   );

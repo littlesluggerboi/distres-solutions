@@ -84,4 +84,5 @@ Miscellaneous Wastes. Expired drugs and other pharmaceutical wastes are part of 
   },
 ];
 
+
 export default data;

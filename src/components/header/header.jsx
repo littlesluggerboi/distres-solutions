@@ -1,52 +1,41 @@
-import { useState } from "react";
 import styles from "./header.module.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [selected, setSelected] = useState("home");
+  const { pathname } = useLocation();
+  let path = pathname.replace("/", "");
+  path = path.split("/")[0];
+
   return (
     <>
       <header>
         <nav>
           <img src="/logo.svg" alt="Distres Solutions Logo" />
           <div className={styles.links}>
-            <Link
-              className={selected === "home" ? styles.selected : ""}
-              onClick={() => {
-                setSelected("home");
-              }}
-            >
+            <Link to={"/"} className={path === "" ? styles.selected : ""}>
               Home
             </Link>
             <Link
-              className={selected === "about" ? styles.selected : ""}
-              onClick={() => {
-                setSelected("about");
-              }}
+              to={"about"}
+              className={path === "about" ? styles.selected : ""}
             >
               About Us
             </Link>
             <Link
-              className={selected === "services" ? styles.selected : ""}
-              onClick={() => {
-                setSelected("services");
-              }}
+              to={"services"}
+              className={path === "services" ? styles.selected : ""}
             >
               Services
             </Link>
             <Link
-              className={selected === "blogs" ? styles.selected : ""}
-              onClick={() => {
-                setSelected("blogs");
-              }}
+              to={"blogs"}
+              className={path === "blogs" ? styles.selected : ""}
             >
               Blogs
             </Link>
             <Link
-              className={selected === "contact" ? styles.selected : ""}
-              onClick={() => {
-                setSelected("contact");
-              }}
+              to={"contact"}
+              className={pathname === "contact" ? styles.selected : ""}
             >
               Contact Us
             </Link>
