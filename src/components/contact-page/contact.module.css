@@ -1,0 +1,47 @@
+.contact{
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.contact > form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border: 1px solid gainsboro;
+    margin-left: auto;
+    max-width: 600px;
+}
+
+.contact > form input, .contact > form textarea{
+    margin-bottom: 1rem;
+}
+
+.contact input, .contact textarea{
+    resize: none;
+    appearance: none;
+    border: 1px solid gainsboro;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.contact legend{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gainsboro;
+}
+.contact label{
+    font-size: 1.2rem;
+}
+
+.contact button{
+    border: none;
+    width: fit-content;
+    align-self: center;
+    color: white;
+    background-color: var(--blue);
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 0.5rem 1.5rem;
+}
