@@ -1,0 +1,29 @@
+.faqs{
+    padding-left: 2rem;
+}
+.form{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.form textarea{
+    resize: none;
+    appearance: none;
+    font-family: inherit;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+}
+
+.form button{
+    width: fit-content;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+

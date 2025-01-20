@@ -1,0 +1,7 @@
+.indent{
+    padding-left: 2rem;
+}
+
+.indent p{
+    text-indent: 2rem;
+}
